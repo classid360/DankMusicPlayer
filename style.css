@@ -1,0 +1,143 @@
+@font-face{
+    font-family: nothing;
+    src: url(fonts/nothing-font-5x7.ttf);
+}
+
+.header {
+    display: flex;
+    justify-content: right;
+}
+
+.cog {
+    border: none;
+    background-color: black;
+}
+
+.cog:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    border-radius: 15px;
+    padding: 2em;
+    margin: 10px;
+    font-family: nothing;
+
+}
+
+.heading {
+    color: white;
+    margin: 1.5em 1.5em;
+    font-size: 2.5em;
+    line-height: 2em; 
+}
+
+.songName {
+    color: white;
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.prev, .next, .play {
+    border: none;
+    background-color: black;
+    margin-right: 5em;
+}
+
+.prev:hover, .next:hover, .play:hover {
+    cursor: pointer;
+}
+
+.nav {
+    padding-top: 2em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 4em;
+    position: relative;
+}
+
+.progress-bar:hover {
+    cursor: pointer;
+}
+
+.progress-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.fileInput {
+    display: none;
+}
+
+.spacer{
+    margin-bottom: 2.4em;
+}
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 1em;
+        line-height: 2.5em;
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+    
+    .songName {
+        font-size: 1em;
+        padding-left: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    
+    body {
+        padding: 1em;
+    }
+    
+    .prev, .next, .play {
+        margin-right: 1em;
+        margin: -0.5em;
+    }
+
+    .prev:hover, .next:hover, .play:hover {
+        cursor: pointer;
+    }
+    
+    .nav {
+        padding-top: 1em;
+        padding-bottom: 2em; 
+    }
+    
+    .progress-bar {
+        margin-left: 3em;
+        width: 80%;
+    }
+    .progress-bar:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 900px) {
+    .progress-bar{
+        width: 80%;
+    }
+    .progress-bar:hover {
+        cursor: pointer;
+    }
+}
